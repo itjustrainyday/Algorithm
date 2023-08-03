@@ -2,7 +2,8 @@
 using namespace std;
 
 void insert(int idx, int num, int arr[], int& len) {//len에 참조자를 보내서 원본의 값이 바뀐다.
-  
+    //왼쪽 idx부터 옮기면 그 다음칸의 값이 사라져버리는 문제점이 생긴다.
+    //인덱스의 문제로 구현에 대해 생각해 볼 수 있다.
     for (int i = len; i > idx; --i) {
         arr[i] = arr[i - 1];
     }
@@ -11,11 +12,10 @@ void insert(int idx, int num, int arr[], int& len) {//len에 참조자를 보내
 }
 
 void erase(int idx, int arr[], int& len) {
+    len--;
     for (int i = idx; i < len; ++i) {
         arr[i] = arr[i + 1];
     }
-    len--;
-
 }
 
 void printArr(int arr[], int& len) {
