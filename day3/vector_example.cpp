@@ -17,4 +17,7 @@ int main(void) {
   cout << v4[0] << v4[1] << v4[2] << '\n';
   v4.pop_back(); // {1,2}
   v4.clear(); // {}
+
+  for(int e : v1) cout << e << ' '; // 1. range-based for loop(since C++11)
+  for(int i = 0; i<v1.size(); ++i); // 2. not-bad 그러나 size()-1은 안됌/ vector는 unsigned int이기 때문에 unsigned int overflow가 일어난다.
 }
