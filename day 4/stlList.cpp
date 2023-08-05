@@ -17,3 +17,45 @@ int main(void) {
     for (list<int>::iterator it = L.begin(); it != L.end(); it++) //c++ 11미만에서 불편하게 구현해야 할 순회
         cout << *it << ' ';
 }
+/*
+- push_back : 마지막 위치에 원소를 삽입. O(1)
+
+- push_front : 시작 위치에 원소를 삽입. O(1)
+
+- pop_back : 마지막 위치의 원소를 삭제. O(1)
+
+- pop_front : 시작 위치의 원소를 삭제. O(1)
+
+- insert : 매개변수로 받은 iterator 위치의 앞에 원소를 삽입. O(1)
+
+- erase : 매개변수로 받은 iterator 위치의 원소를 삭제 후 원래 위치의 다음 원소의 iterator를 반환. O(1)
+
+​
+
+- size : list의 크기를 size_t 자료형으로 반환.
+
+- empty : list가 비어있는지 여부를 bool 자료형으로 반환.
+
+- resize : list의 크기를 변경.
+
+- clear : list의 모든 원소를 삭제.
+
+​
+
+- begin : list의 첫 번째 원소를 가리키는 iterator를 반환.
+
+- end : list의 마지막 원소의 다음 칸을 가리키는 iterator를 반환.
+
+- rbegin : begin의 reverse_iterator 버전.
+
+- rend : end의 reverse_iterator 버전.
+
+- front : list의 첫 번째 원소를 reference로 반환. O(1)
+
+- back : list의 마지막 원소를 reference로 반환. O(1)
+
+​
+
+- sort : list 내의 원소를 정렬. O(nlogn)
+*/
+​
